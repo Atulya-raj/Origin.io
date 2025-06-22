@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Predict Ethnicity From a Name</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="nationalize.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="myname">origin.io</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
+
+        <div class="navbuttons" id="navMenu">
+            <div id="openModal"><a href="#">API Docs</a></div>
+            <div id="openModal2"><a href="#">Tools</a></div>
+            <div id="openModal3"><a href="#">Resources</a></div>
+            <div id="openModal4"><a href="#">Pricing</a></div>
+            <div id="openModal5"><a href="#">Log in</a></div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="modalinner">
+            <p>This feature is not yet Added.<br>
+                Will add it Soon!
+            </p>
+            <button id="closeModal"><b>Close</b></button>
+        </div>
+    </div>
+    </div>
+
+    <div class="box">
+        <h1>Predict the
+            <br>Ethnicity of a
+            <br>Name
+        </h1>
+    </div>
+
+    <div class="mysearch">
+        <input type="text" id="mytxt" placeholder="Last or Full Name" class="textbox">
+        <div class="searchbox">
+            <button onclick="fetchdata()" type="submit" id="myid"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="myanswer">
+        <h3 id="output" class="myoutput"></h3>
+    </div>
+
+    <div class="myanswer2">
+        <h3 id="output2" class="myoutput2"></h3>
+    </div>
+
+    <p>Trusted by leading organizations</p>
+    <div class="myicons">
+        <img src="Images/the-guardian-new-logo-png_seeklogo-326255.png" alt="Site Logo" class="otherlogo">
+        <img src="Images/vit.jpg" alt="Site Logo" class="otherlogo">
+        <img src="Images/png-transparent-the-times-of-india-newspaper-hindustan-times-the-economic-times-india-text-logo-india.png"
+            alt="Site Logo" class="otherlogo">
+        <img src="Images/Uber-Logo-2018-present.jpg" alt="Site Logo" class="otherlogo">
+        <img src="Images/columbia-university-logo-png-greenshields-columbia-university-300.png" alt="Site Logo"
+            class="otherlogo">
+        <img src="Images/logo-colors-black.png" alt="Site Logo" class="otherlogo">
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+    <script type="module" src="nationalize.js"></script>
+</body>
+
+</html>
